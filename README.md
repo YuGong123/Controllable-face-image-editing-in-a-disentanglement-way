@@ -30,17 +30,15 @@ You can also find at the above link our **environment.yml** file to create a rel
 
 The dataset is comprised of StyleGAN 2 generated images. 
 
-We randomly sample 70,000 Gaussian noises $z$ and then map them to $\mathcal{W}$, the latent space of the pre-trained generator G, which in turn generates the resulting images $G(w)$ . Actually, to improve the average quality of the generated images, we first calculate the average vector $\bar{w} $ from the latent space $\mathcal{W}$ of the selected pretrained StyleGAN2 generator. Finally, the resulting images $G(w + \bar{w} )$  are used as our training dataset. The test dataset is generated in the same way.
+We randomly sample 70,000 Gaussian noises $z$ and then map them to $\mathcal{W}$, the latent space of the pre-trained generator G, which in turn generates the resulting images $G(w)$ . Actually, to improve the average quality of the generated images, we first calculate the average vector $\bar{w} $ from the latent space $\mathcal{W}$ of the selected pretrained StyleGAN2 generator. Finally, the resulting images $G(w+\bar{w} )$  are used as our training dataset. The test dataset is generated in the same way.
 
 You can use Utils/**data_creator.py**  to generate the dataset in the paper.
 
 
 
-## **Architecture** 
+## Architecture
 
 ![Architecture](./Architecture.jpg)
-
-Green blocks represent network components, solid lines represent data flows, and dotted lines represent losses. The identity image $x^{1}$ and attribute image $x^{2}$ are sent to the same encoder. Identity branch  $E_{id}$  is used to extract identity code  $z_{id}$, and attribute branch $E_{attr}$ is used to extract attribute code $z_{attr}$. The new combination code $z = ({z_{id}},{z_{attr}})$ is mapped through a mapper network M to $\mathcal{W}$, the latent space of the pre-trained generator G, which in turn generates a reconstructed image (above) or a mixed image (below). $L_{mix}$ and $L_{lpips}$ are reconstruction losses used to preserve pixel-level information and learn perceptual similarity, respectively. $L_{id_2}$  is an identity preservation loss that uses the identity identifier R to learn identity feature by calculating cosine similarity of two pictures $\hat{x}^{2}$ and $x^{1}$. $L_{attr}$  is an attribute preservation loss that uses the image clipper C to achieve partial similarity between  $\hat{x}^{2}$ and $x^{2}$.
 
 
 
@@ -71,6 +69,6 @@ Try **Inference.py** notebook to disentangle identity from attributes by yoursel
 
 
 
-## Web-Demo
+## Web_Demo
 
-![Web_Demo](./Web_Demo/Web_Demo.jpg)
+![Web_Demo](./Web_Demo\Web_Demo.jpg)
