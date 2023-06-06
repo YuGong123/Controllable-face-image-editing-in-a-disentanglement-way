@@ -71,4 +71,4 @@ Try **Inference.py** notebook to disentangle identity from attributes by yoursel
 
 ## Web_Demo
 
-![Web_Demo](./Web_Demo\Web_Demo.jpg)
+![Web_Demo](./Web_Demo.jpg)
