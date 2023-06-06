@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID-disentanglement-swapping-autoencoder-demo</title>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+{#    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap.css') }}">#}
+
+</head>
+<body>
+    <h1 align="center">ID-disentanglement-swapping-autoencoder-demo</h1>
+    <form action="" enctype='multipart/form-data' method='POST' align="center">
+
+        <label for="file">选择要上传的身份图</label>
+        <input type="file" name="file1" id="file1" style="margin-top:20px;"/>
+{#        <img src="" id="img1" style="margin-top:20px;width: 256px;height: 256px;">#}
+        <br>
+
+        <label for="file">选择要上传的属性图</label>
+        <input type="file" name="file2" id="file2" style="margin-top:20px;"/>
+{#        <img src="" id="img2" style="margin-top:20px;width: 256px;height: 256px;">#}
+        <br>
+
+        <span>点击按钮 开始图像预测：</span>
+        <input type="submit" value="人脸特征解纠缠" class="button-new" style="margin-top:15px;"/>
+        <br><br><br>
+
+        <a href="http://localhost:5000/download">下载预测图</a>
+
+    </form>
+
+    <br><br><br>
+    <table align="center">
+        <caption><b>特征解纠缠结果图</b></caption>
+        <tr>
+            <th>身份图</th>
+            <th>属性图</th>
+            <th>混合图</th>
+        </tr>
+
+        <tr>
+            <th><img src="data:;base64,{{ id_img_stream }}"></th>
+            <th><img src="data:;base64,{{ attr_img_stream }}"></th>
+            <th><img src="data:;base64,{{ mixed_img_stream }}"></th>
+        </tr>
+    </table>
+
+</body>
+
+<script type="text/javascript">
+    $("#file1").change(function(){
+        var objUrl = getObjectURL(this.files[0]) ;//获取文件信息
+        console.log("objUrl = "+objUrl);
+        if (objUrl) {
+            $("#img1").attr("src", objUrl);
+            $("#img1").attr("display", "none");
+        }
+    });
+
+    $("#file2").change(function(){
+    var objUrl = getObjectURL(this.files[0]) ;//获取文件信息
+    console.log("objUrl = "+objUrl);
+    if (objUrl) {
+        $("#img2").attr("src", objUrl);
+        $("#img2").attr("display", "none");
+    }
+    });
+
+    function getObjectURL(file) {
+    var url = null;
+    if(window.createObjectURL!=undefined) {
+        url = window.createObjectURL(file) ;
+    }else if (window.URL!=undefined) { // mozilla(firefox)
+        url = window.URL.createObjectURL(file) ;
+    }else if (window.webkitURL!=undefined) { // webkit or chrome
+        url = window.webkitURL.createObjectURL(file) ;
+    }
+    return url ;
+    }
+
+</script>
+</html>
