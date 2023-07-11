@@ -4,7 +4,21 @@
 
 ## Description
 
-Pytorch implementation of the paper *Controllable face image editing in a disentanglement way* for both training and evaluation, with StyleGAN 2.
+Pytorch implementation of the paper *[Controllable face image editing in a disentanglement way](https://doi.org/10.1117/1.JEI.32.4.043011)* for both training and evaluation, with StyleGAN 2.	This paper has been accepted for publication at **Journal of Electronic Imaging**, 2023.
+
+![Architecture](./Architecture.jpg)
+
+> Authors:  Shiyan Zhou, Ke Wang, Jun Zhang, Yi Xia, Peng Chen, and Bing Wang
+>
+> 
+>
+> **Abstract**： The prevalence of deep learning has attracted interest in the face image manipulation domain, especially in face editing with disentanglement representation. However, how to realize controllable disentangled representation of face images still remains challenging. Current methods require extensive supervision and training, or images will have a significantly impaired quality. We present an approach that learns how to represent data in an ideal disentangled way, with minimal supervision. Specifically, we use a swapping autoencoder with identity and attribute branches to learn identity and attribute representations, respectively. In addition, we separate the process of disentanglement and synthesis by an advanced pre-trained unsupervised StyleGAN2 image generator to make the entire network structure focus on learning data disentanglement. The identity and attribute vectors from different images are combined into a new representation that is mapped by a linear mapper into the generator’s latent space to generate a new hybrid image. In this way, we take advantage of StyleGAN2’s most advanced quality and its expressive latent space without the pressure of training a decoder. Experimental results prove that our method successfully separates the identity and other attributes of face images, outperforms existing methods, and requires less training and supervision.
+
+
+
+
+
+## Reference 
 
 - Reference Code: https://github.com/danielroich/ID-disentanglement-Pytorch
 - Reference papers: https://arxiv.org/abs/2005.07728
@@ -36,12 +50,6 @@ You can use Utils/**data_creator.py**  to generate the dataset in the paper.
 
 
 
-## Architecture
-
-![Architecture](./Architecture.jpg)
-
-
-
 ## Training
 
 Note, I recommend that you use Utils/**data_creator.py** to generate training dataset, which saves you the trouble of paths.
@@ -52,7 +60,7 @@ To train the model run **train.py**, you can change parameters in **Configs/** f
 
 ## Checkpoints
 
-Our pretrained checkpoint (swap_encoder.pt and mlp.pt) attached at this https://pan.baidu.com/s/1uI49sT58jadTV8ZPbPAVIQ 
+Our pretrained checkpoints (swap_encoder.pt and mlp.pt) attached at this https://pan.baidu.com/s/1uI49sT58jadTV8ZPbPAVIQ 
 Extraction code：9hq6 . Or you can get your own checkpoints by  **train.py**.
 
 
@@ -69,6 +77,12 @@ Try **Inference.py** notebook to disentangle identity from attributes by yoursel
 
 
 
+
+
 ## Web_Demo
+
+We additionally provide a Web_Demo, which is an independent project and is placed under the `Web_Demo` folder. If you want to experience this demo, you can download our pre-trained checkpoints and put them under `Web_Demo\checkpoints` folder. 
+
+Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 ![Web_Demo](./Web_Demo.jpg)
