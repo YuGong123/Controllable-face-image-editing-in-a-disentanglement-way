@@ -85,4 +85,20 @@ We additionally provide a Web_Demo, which is an independent project and is place
 
 Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
+
+
+1. 采用HTML、CSS、JavaScript部署浏览器页面。
+2. 采用Pytorch 深度学习框架，构建server的图像处理模型。
+3. 采用Flask，这个轻量级web框架 ，来实现前后端通信。
+
+
+
 ![Web_Demo](./Web_Demo.jpg)
+
+
+
+
+
+
+
+<video id="video" controls="" src="./web-demo.mp4" ></video>
