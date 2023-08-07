@@ -4,7 +4,7 @@
 
 ## Description
 
-Pytorch implementation of the paper *[Controllable face image editing in a disentanglement way](https://doi.org/10.1117/1.JEI.32.4.043011)* for both training and evaluation, with StyleGAN 2.	This paper *[](https://caps.luminad.com:8443/stockage/stock/SPIE/LDL-SPIE-JEI-230248G/JEI-230248G_online.pdf)* has been accepted for publication at **Journal of Electronic Imaging**, 2023.
+Pytorch implementation of the paper *[Controllable face image editing in a disentanglement way](https://doi.org/10.1117/1.JEI.32.4.043011)* for both training and evaluation, with StyleGAN2.	This paper *[](https://caps.luminad.com:8443/stockage/stock/SPIE/LDL-SPIE-JEI-230248G/JEI-230248G_online.pdf)* has been accepted for publication at **Journal of Electronic Imaging**, 2023.
 
 ![Architecture](./Architecture.jpg)
 
