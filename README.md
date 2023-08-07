@@ -86,14 +86,14 @@ We additionally provide a Web_Demo, which is an independent project and is place
 Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 
-
+- Demo视频截图
 ![Web_Demo](./Web_Demo.jpg)
 
 
 
 
 
-Demo演示
+- Demo视频演示
 
 https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/assets/91369699/85f5655e-cbcd-4b25-adcf-4feb321055af
 
