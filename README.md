@@ -101,4 +101,6 @@ Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 
 
-<video id="video" controls="" src="https://user-images.githubusercontent.com/91369699/258696571-b36664c7-0841-4501-865e-050844dc0cd4.mp4" ></video>
+<video id="video" controls="" src="https://user-images.githubusercontent.com/91369699/258696571-b36664c7-0841-4501-865e-050844dc0cd4" ></video>
+
+
