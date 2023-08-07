@@ -95,7 +95,7 @@ Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 Demo演示
 
-<video id="video" controls="" src="https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/assets/91369699/85f5655e-cbcd-4b25-adcf-4feb321055af" ></video>
+https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/assets/91369699/85f5655e-cbcd-4b25-adcf-4feb321055af
 
 
 
