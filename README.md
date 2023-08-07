@@ -4,7 +4,7 @@
 
 ## Description
 
-Pytorch implementation of the paper *[Controllable face image editing in a disentanglement way](https://doi.org/10.1117/1.JEI.32.4.043011)* for both training and evaluation, with StyleGAN2.	 *[This paper](https://caps.luminad.com:8443/stockage/stock/SPIE/LDL-SPIE-JEI-230248G/JEI-230248G_online.pdf)* has been accepted for publication at **Journal of Electronic Imaging**, 2023.
+Pytorch implementation of the paper *[Controllable face image editing in a disentanglement way](https://doi.org/10.1117/1.JEI.32.4.043011)* for both training and evaluation, with StyleGAN2.	 *[This paper](https://caps.luminad.com:8443/stockage/stock/SPIE/LDL-SPIE-JEI-230248G/JEI-230248G_online.pdf)* has been accepted for publication at **Journal of Electronic Imaging**, 2023. (SJR Q3, IF: 1.1)
 
 ![Architecture](./Architecture.jpg)
 
@@ -88,7 +88,7 @@ Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 本人利用 HTML 等前端知识，采用 Flask Web框架，将此论文改造成 B/S-WebServer 工程项目。
 1. 采用HTML、CSS、JavaScript部署浏览器页面。
-2. 采用Pytorch 深度学习框架，构建server的图像处理模型。
+2. 采用Pytorch 深度学习框架，构建server端的图像处理的深度学习模型。
 3. 采用Flask，这个轻量级web框架 ，来实现前后端通信。
 
 
