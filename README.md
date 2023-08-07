@@ -101,8 +101,8 @@ Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 - Demo演示
 
-<video id="video" controls="" src="https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/assets/91369699/8daf4346-a70b-4269-bc11-45530eb006b6" ></video>
+<video id="video" controls="" src="https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/assets/91369699/95c974ec-ee95-4ee8-a37a-ea706cacb2f9" ></video>
 
 
 
-<video id="video" controls="" src="./web_demo.mp4" ></video>
+<video id="video" controls="" src="https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/blob/76f96e91af9f080154693ee3d985e0790d924efa/web_demo.mp4" ></video>
