@@ -103,6 +103,3 @@ Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 <video id="video" controls="" src="https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/assets/91369699/8daf4346-a70b-4269-bc11-45530eb006b6" ></video>
 
-<video id="video" controls="" src="https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/blob/89c235d5848b806f75e9e05e4167d6f0376607ca/web-demo.mp4" ></video>
-
-
