@@ -101,4 +101,4 @@ Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 
 
-<video id="video" controls="" src="./web-demo.mp4" ></video>
+<video id="video" controls="" src="https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/blob/main/web-demo.mp4" ></video>
