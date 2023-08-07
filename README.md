@@ -86,6 +86,12 @@ We additionally provide a Web_Demo, which is an independent project and is place
 Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 
+本人利用 HTML 等前端知识，采用 Flask Web框架，将此论文改造成 B/S-WebServer 工程项目。
+1. 采用HTML、CSS、JavaScript部署浏览器页面。
+2. 采用Pytorch 深度学习框架，构建server的图像处理模型。
+3. 采用Flask，这个轻量级web框架 ，来实现前后端通信。
+
+
 - Demo视频截图
 ![Web_Demo](./Web_Demo.jpg)
 
@@ -96,12 +102,3 @@ Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 - Demo视频演示
 
 https://github.com/YuGong123/Controllable-face-image-editing-in-a-disentanglement-way/assets/91369699/85f5655e-cbcd-4b25-adcf-4feb321055af
-
-
-
-
-
-1. 采用HTML、CSS、JavaScript部署浏览器页面。
-2. 采用Pytorch 深度学习框架，构建server的图像处理模型。
-3. 采用Flask，这个轻量级web框架 ，来实现前后端通信。
-
