@@ -86,7 +86,7 @@ We additionally provide a Web_Demo, which is an independent project and is place
 Under the `Web_Demo\static\images` folder, we also provide 2 example images.
 
 
-本人利用 HTML 等前端知识，采用 Flask Web框架，将此论文改造成 B/S-WebServer 工程项目。
+本人利用 HTML 等前端知识，采用 Flask Web框架，将此论文改造成 B/S-WebServer 工程项目。该项目文件被单独放在了Web_Demo文件夹下，可以独立运行。但需要配置好StyleGan2的环境，并Web_Demo文件夹下新建一个checkpoints文件夹，把权重放进去。
 1. 采用HTML、CSS、JavaScript部署浏览器页面。
 2. 采用Pytorch 深度学习框架，构建server端的图像处理的深度学习模型。
 3. 采用Flask，这个轻量级web框架 ，来实现前后端通信。
